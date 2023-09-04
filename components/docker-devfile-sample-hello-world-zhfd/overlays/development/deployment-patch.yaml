@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: docker-devfile-sample-hello-world-zhfd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-hegu-tenant/test-app-fhzq/docker-devfile-sample-hello-world-zhfd@sha256:b0d87b4e0330cf4f3bb763efe1a1373041bbceeb41ccc69a78e74e10a800832a
+        name: container-image
+        resources: {}
+status: {}
